@@ -1,11 +1,32 @@
-
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
 header {
+    height: 25vh;
     background-color: #294969;
     color: ghostwhite;
     padding: 10px 15px;
     border: 12px solid #ffa949;
     border-bottom-color: #cf7919;
     margin: -8px -8px 20px;
+} 
+section {
+    min-height: 100vh;
+    padding: 1rem;
+    border-bottom: 2px dotted #666;
+    background-color: azure;
+}  
+aside img, #bio {
+    width: 100%;
+    max-width: 600px;
+}
+#bio {
+    padding: 2rem;
+    background-color: mistyrose;
+    border: 5px solid tomato;
 }
 footer {
     width: 200px;
