@@ -6,6 +6,7 @@ html {
 }
 header {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,6 +27,7 @@ section {
 } 
 figure {
     position: relative;
+    z-index: 1;
     margin: 0;
 }
 figcaption {
@@ -45,6 +47,7 @@ figcaption {
 }
 #interesting-banner {
     position: sticky;
+    z-index:3;
     top: 0;
     padding: 10px 15px;
     border: 12px solid lightsalmon;
@@ -80,4 +83,13 @@ ul li {
     padding: 10px 0;
     background-color: yellow;
     text-align: center;
+}
+
+@media print {
+    section {
+        min-height: auto;
+    }
+    #interesting-banner {
+        display: none;
+    }
 }
